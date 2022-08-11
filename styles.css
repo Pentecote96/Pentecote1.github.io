@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+}
+nav h1{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('https://i.ibb.co/4d8CYtM/background-header.jpg');
+    background-size: cover;
+    color: white;
+    padding: 40px;
+}
+header h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+header button{
+    padding: 10px 20px;
+    background-color: #fff;
+    color:#000;
+    border:none;
+    margin-bottom: 30px;
+    outline:none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+}
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:20px;
+}
+.main .content .card .left{
+   flex: 0 0 30%;
+   padding: 20px;
+   background-color:black;
+   color:#fff;
+}
+.main .content .card .right img{
+    height:300px;
+    width: 400px;
+    margin-top: 5px;
+}
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 30px 100px;;
+}
+footer h1{
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid white;
+    width: 20%;
+    padding-bottom: 5px;
+}
+section.contact_us{
+    padding:50px;
+    text-align:center;
+}
+section.contact_us h2{
+    color: white;
+    text-align:center;
+    padding-bottom:10px;
+    font-size:35px;
+    margin-top:0px;
+    
+}
+section.contact_us input,section.contact_us textarea,section.contact_us button{
+    width:100%;
+    max-width:768px !important;
+    border:1px solid white;
+    padding:20px;
+    background-color:#fff;
+    margin-bottom:10px;
+    color:#fff;
+    box-sizing: border-box;
+}
+section.contact_us input:focus,section.contact_us textarea:focus{
+  border-color:white;
+}
+section.contact_us .submit{
+    background-color:#3764e6;
+    margin:0;
+    margin-left:-10px;
+    margin-right:-10px;
+  cursor:pointer;
+}
+section.contact_us .submit{
+  background-color:black;
+  color:#FFFF;
+}
+footer #contact{
+    color: maroon;
+}
+@media(max-width:768px){
+    header.header{
+      padding:0px 20px;
+    }
+      navbar{
+          display:block;
+      }
+    
+     navbar .title,navbar .nav-menu{
+          width:100%;
+  
+      }
+    navbar div.title{
+      display:flex;
+      align-items:center;
+      flex-direction:row;
+    }
+    navbar div.title a{
+      display:block;
+    }
+  
+    
+    navbar .nav-menu{
+      display:none;
+    }
+      navbar .nav-menu ul li{
+          display:block;
+          width:100%;
+          padding:10px 5px;
+        border-top:1px solid #FFFF;
+      }
+      section.hero{
+          height:400px;
+      }
+      section.hero div{
+          padding:0px 50px;
+  
+      }
+  
+      div.services_container {
+          display:block;
+      }
+    div.services_container .service{
+      margin-bottom:15px;
+    }
+  
+   section.hero,section.services,section.about_us,section.contact_us{
+          padding:50px 20px;
+          
+      }
+  }@media screen and (max-width:680px){
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .card {
+        margin: 10px;
+    }
+    .main .content .card .right img{
+        height:200px;
+        width: 100%;
+        margin-top: -0px;
+    }
+    .main .content .card{
+        display: block;
+    }
+    footer{
+        padding: 30px;
+    }
+}
